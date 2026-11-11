@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLOCKED - voxel survival in an outbreak</title>
+  <meta name="description" content="DEADLOCKED is a free voxel survival game: build, craft and hold out against a parasite outbreak. Play in your browser or download the faster desktop launcher.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%23141414'/%3E%3Crect x='3' y='2' width='10' height='9' fill='%23c9c3b5'/%3E%3Crect x='4' y='5' width='3' height='3' fill='%23101010'/%3E%3Crect x='9' y='5' width='3' height='3' fill='%23101010'/%3E%3Crect x='3' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='7' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='11' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='6' y='8' width='4' height='2' fill='%238a0f0f'/%3E%3C/svg%3E">
+  <link rel="preload" href="/fonts/DeadlockedPixel.woff" as="font" type="font/woff" crossorigin>
+  <script type="module" crossorigin src="/assets/landing-CcNZX2ZE.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/changelog-mcm3wNGH.js">
+  <link rel="stylesheet" crossorigin href="/assets/landing-puceiOGK.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="/" aria-label="DEADLOCKED home">
+      <svg class="mark" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="3" y="2" width="10" height="9" fill="#d9d2c3"/><rect x="4" y="5" width="3" height="3" fill="#120d18"/><rect x="9" y="5" width="3" height="3" fill="#120d18"/><rect x="3" y="11" width="2" height="3" fill="#d9d2c3"/><rect x="7" y="11" width="2" height="3" fill="#d9d2c3"/><rect x="11" y="11" width="2" height="3" fill="#d9d2c3"/><rect x="6" y="8" width="4" height="2" fill="#c0283a"/></svg>
+      <span>DEADLOCKED</span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#launcher">Launcher</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#changelog">Changelog</a>
+    </nav>
+    <div class="nav-end">
+      <a class="ghost-link" href="https://github.com/playdeadlocked/playdeadlocked.github.io" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a class="btn small" href="#downloads">Download</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span>Voxel survival<span class="sep">&middot;</span>Free to play<span class="sep">&middot;</span><span id="ver-tag">Version 1.1</span></p>
+        <h1>Build it. Hold it.<br><span class="accent">Outlast the outbreak.</span></h1>
+        <p class="lede">A block world where a parasite is taking the ground from under you. Mine, craft and fortify by day; by night the infected come for whatever you built.</p>
+
+        <div class="cta">
+          <a class="btn primary" id="dl-main" href="#downloads">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M7 1h2v7.6l2.6-2.6L13 7.4 8 12.4 3 7.4 4.4 6 7 8.6zM2 13h12v2H2z"/></svg>
+            <span id="dl-main-label">Download the launcher</span>
+          </a>
+          <a class="btn play" href="/play/">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2l10 6-10 6z"/></svg>
+            Play in web
+          </a>
+          <a class="btn ghost" href="https://github.com/playdeadlocked/playdeadlocked.github.io" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Open in GitHub
+          </a>
+        </div>
+
+        <ul class="platforms" aria-label="Launcher platforms">
+          <li data-os="win"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M1 2.5l5.7-.8v5.6H1zm6.5-.9L15 .5v6.8H7.5zM1 8.2h5.7v5.6L1 13zm6.5 0H15V15l-7.5-1.1z"/></svg>Windows</li>
+          <li data-os="mac"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M11.2 8.5c0-1.6 1.3-2.4 1.4-2.4-.8-1.1-2-1.3-2.4-1.3-1-.1-2 .6-2.5.6s-1.3-.6-2.2-.6C4.4 4.8 3.3 5.5 2.7 6.6c-1.2 2.1-.3 5.2.9 6.9.6.8 1.2 1.7 2.1 1.7.8 0 1.2-.5 2.2-.5s1.3.5 2.2.5c.9 0 1.5-.9 2-1.7.7-1 .9-1.9.9-1.9s-1.8-.7-1.8-3.1zM9.6 3.6c.5-.6.8-1.4.7-2.1-.7 0-1.5.5-2 1-.4.5-.8 1.3-.7 2.1.8.1 1.5-.4 2-1z"/></svg>macOS</li>
+          <li data-os="linux"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1C6.3 1 5.5 2.4 5.5 4c0 1-.2 1.7-.9 2.7C3.7 8 3 9.3 3 10.6c0 .5.1.9.3 1.2-.6.4-1.3.6-1.3 1.3 0 .9 1.6.9 2.6 1.4.9.4 1.6.5 2.1-.1.4.1.8.1 1.3.1s.9 0 1.3-.1c.5.6 1.2.5 2.1.1 1-.5 2.6-.5 2.6-1.4 0-.7-.7-.9-1.3-1.3.2-.3.3-.7.3-1.2 0-1.3-.7-2.6-1.6-3.9-.7-1-.9-1.7-.9-2.7C10.5 2.4 9.7 1 8 1zm-1 3.2c.3 0 .5.3.5.7s-.2.7-.5.7-.5-.3-.5-.7.2-.7.5-.7zm2 0c.3 0 .5.3.5.7s-.2.7-.5.7-.5-.3-.5-.7.2-.7.5-.7zM8 6.2l1.3.8L8 7.8 6.7 7z"/></svg>Linux</li>
+        </ul>
+        <p class="meta" id="dl-meta">Launcher for Windows, macOS and Linux</p>
+      </div>
+
+      <aside class="card" id="launcher" aria-labelledby="perf-title">
+        <p class="card-kicker">Desktop launcher</p>
+        <h2 id="perf-title"><span class="accent">Faster</span> than the browser.</h2>
+        <p class="card-text">The launcher runs the same game from files on your disk, on your fast graphics card, with no browser frame cap.</p>
+
+        <div class="meter">
+          <div class="meter-head"><span>This browser, right now</span><span><b id="fps-now">--</b> fps</span></div>
+          <div class="bar"><i id="fps-bar"></i></div>
+          <p class="meter-note">Measured live on this page. Browsers hold games to your screen's refresh rate.</p>
+        </div>
+
+        <ul class="perks">
+          <li><b>Uncapped frame rate</b><span>No vsync limit; the game runs as fast as your hardware allows.</span></li>
+          <li><b>High-performance GPU</b><span>Laptops with two graphics chips use the fast one.</span></li>
+          <li><b>Starts instantly, plays offline</b><span>Nothing to download each time you play.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="band" id="features">
+      <h2 class="section-title">What you are up against</h2>
+      <div class="grid">
+        <article class="feature"><h3>An editable block world</h3><p>Every block can be mined and placed. Caves, labs, villages and an outbreak zone, generated from your seed.</p></article>
+        <article class="feature"><h3>Twelve kinds of infected</h3><p>Runners, spitters, tanks, lurkers that wait in the dark, and some that dig through your walls.</p></article>
+        <article class="feature"><h3>Craft, smelt, brew</h3><p>A full recipe book, furnaces, chests and brewing stands. Brew the one potion that cleans infected ground.</p></article>
+        <article class="feature"><h3>The Plague Heart</h3><p>A very rare boss that rises at night. Its heart is the only cure for the spreading infection.</p></article>
+      </div>
+    </section>
+
+    <section class="band" id="downloads">
+      <h2 class="section-title">Downloads</h2>
+      <p class="section-sub" id="dl-status">Checking for the latest launcher release...</p>
+      <div class="dl-grid">
+        <a class="dl" data-asset="DEADLOCKED-Launcher-Setup.exe" data-os="win"><span class="dl-os">Windows</span><span class="dl-kind">Installer (.exe)</span><span class="dl-size"></span></a>
+        <a class="dl" data-asset="DEADLOCKED-Launcher-Portable.exe" data-os="win"><span class="dl-os">Windows</span><span class="dl-kind">Portable (.exe), no install</span><span class="dl-size"></span></a>
+        <a class="dl" data-asset="DEADLOCKED-Launcher-mac-arm64.dmg" data-os="mac"><span class="dl-os">macOS</span><span class="dl-kind">Apple silicon (.dmg)</span><span class="dl-size"></span></a>
+        <a class="dl" data-asset="DEADLOCKED-Launcher-mac-x64.dmg" data-os="mac"><span class="dl-os">macOS</span><span class="dl-kind">Intel (.dmg)</span><span class="dl-size"></span></a>
+        <a class="dl" data-asset="DEADLOCKED-Launcher.AppImage" data-os="linux"><span class="dl-os">Linux</span><span class="dl-kind">AppImage, any distro</span><span class="dl-size"></span></a>
+        <a class="dl" data-asset="DEADLOCKED-Launcher.deb" data-os="linux"><span class="dl-os">Linux</span><span class="dl-kind">Debian / Ubuntu (.deb)</span><span class="dl-size"></span></a>
+      </div>
+      <p class="section-sub">No install needed to try it: <a href="/play/">play in your browser</a>. Web saves stay in this browser; launcher saves stay on your computer.</p>
+    </section>
+
+    <section class="band" id="changelog">
+      <h2 class="section-title">Changelog</h2>
+      <div id="changes" class="changes"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>DEADLOCKED</span>
+    <a href="/licenses/THIRD_PARTY.txt">Third-party licenses</a>
+  </footer>
+
+</body>
+</html>
