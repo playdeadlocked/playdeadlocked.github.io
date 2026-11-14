@@ -1,0 +1,83 @@
+{
+ "format_version": "1.8.0",
+ "animations": {
+  "walk": {
+   "loop": true,
+   "animation_length": 0.5,
+   "sound_effects": {
+    "0.0": {
+     "effect": "footstep"
+    }
+   }
+  },
+  "run": {
+   "loop": true,
+   "animation_length": 0.3
+  },
+  "swim": {
+   "loop": true,
+   "animation_length": 0.6
+  },
+  "idle": {
+   "loop": true,
+   "animation_length": 3
+  },
+  "eat": {
+   "loop": true,
+   "animation_length": 1
+  },
+  "sleep": {
+   "loop": true,
+   "animation_length": 3
+  },
+  "attack": {
+   "loop": true,
+   "animation_length": 0.6,
+   "timeline": {
+    "0.3333": "hit;"
+   }
+  },
+  "call": {
+   "loop": true,
+   "animation_length": 0.6
+  },
+  "hurt": {
+   "loop": true,
+   "animation_length": 0.3,
+   "bones": {
+    "body": {
+     "rotation": {
+      "0.0": {
+       "post": [
+        0,
+        0,
+        0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.07": {
+       "post": [
+        10,
+        0,
+        0
+       ],
+       "lerp_mode": "catmullrom"
+      },
+      "0.3": {
+       "post": [
+        0,
+        0,
+        0
+       ],
+       "lerp_mode": "catmullrom"
+      }
+     }
+    }
+   }
+  },
+  "death": {
+   "loop": "hold_on_last_frame",
+   "animation_length": 1
+  }
+ }
+}

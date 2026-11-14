@@ -1,0 +1,89 @@
+[
+ {
+  "version": "1.4",
+  "title": "The Survival Update",
+  "notes": [
+   "Every control can be rebound, mouse buttons included: attack, use, pick block, and the new Aim Weapon and Fire Weapon binds (hold the left button to aim, right to fire, as before). Clashing binds show red with the other action named; Escape unbinds a key.",
+   "Outbreak guns, rebuilt as one system: semi, burst and automatic fire (switch with V), bolt and pump actions, tactical and empty reloads from the ammo you carry, shotguns that load shell by shell, recoil, bullet drop, headshots and armour. Scopes, red dots and iron sights each aim their own way; scroll to zoom a scope. Inspect your gun with H.",
+   "Gun packs: add TACZ-format gun packs in Options > Gun Packs. Their guns, models, sounds and animations join Outbreak beside the built-in guns.",
+   "The infection evolves. Outbreak worlds climb from phase 0 to phase 5 as parasites are killed, spread and assimilate; each phase spreads faster and sends stronger mobs. Spore nodes seed it, and light level 8 or more stops it. Pick the speed (or turn it off) on the World tab.",
+   "Fight back with the Purifier, which protects and cleans the ground around it, with fire on infected ground and with the Potion of Cleansing. Parasites now hunt farm animals and turn them into Assimilated Pigs, Cows, Sheep and Chickens.",
+   "The Outbreak Journal (J) explains every phase and lists the sites you have found.",
+   "Structures have danger tiers from 1 to 5, and every tier 3 or higher site hides a goal room with a signature reward. A Survey Chart marks every site within 320 blocks.",
+   "New Outbreak worlds make you earn it: access chains, alarms that bring growing waves, three mini-bosses (the Breach Sergeant, the Shackled and the Brood Matron), a flooded vault to drain, mine cave-ins, lab missions and nest hearts. Mobs no longer break into goal rooms.",
+   "Realism settings (Video Settings > Realism and Music & Sounds > Realism Sounds): held and dropped torches and burning things light the world, water has depth colour, shore foam and splashes, and footsteps sound different on every surface. Pick a preset or leave it on Auto.",
+   "Worlds can be exported to one .dlworld file and imported again from Select World. A world saved by a newer build is refused with the version that can open it.",
+   "Desktop launcher 1.1: installations, version installs that are checked before they run, Settings, Diagnostics, a crash screen with a report that stays on your computer, offline play, and updates for the launcher and the game. Worlds from launcher 1.0 are copied to disk automatically, and the old copy is kept.",
+   "Fixed: a quick tap on an automatic gun now always fires a round, and /give accepts a target first (/give @s <item>)."
+  ]
+ },
+ {
+  "version": "1.3",
+  "title": "The Basin Update",
+  "notes": [
+   "Outbreak mobs rebuilt: all twelve types, the Frostbite young, the mutant giant and the Plague Heart have new, more detailed models with breathing, twitching and glowing eyes. Their health, speed, reach and hit areas are exactly as before.",
+   "Prefer the old look? Options > Video Settings > Outbreak Mobs: Classic. The change applies to mobs already in the world at once.",
+   "Parasitic Dino: two pterosaurs join the basin. The Quetzalcoatlus circles high over its home and drops down when it spots you in the open; the Hatzegopteryx stalks on all fours and takes short flights.",
+   "New Parasitic Dino worlds have four more sites: a hatchery lab with a sealed vault, the bone pit the Gravemaw calls home, a flooded quarry and lava-tube caves with a survey camp.",
+   "Fire keeps young dinosaurs back; a big fire turns even the Gravemaw. Throw a Firepot, carry a torch, but a light also shows you at night.",
+   "Rattle Bottles draw dinosaurs away, Fern Musk hides your scent and shortens their sight, and Hand Flares now light up the ground around them.",
+   "Sleep in a bedroll to wake there after you die.",
+   "A way out: power the outpost radio, repair it with a Radio Valve and an Antenna Lead, call for pickup and survive until the helicopter reaches the landing zone. You can keep playing afterwards.",
+   "Dinosaurs no longer get stuck walking into a tree trunk; they step around it."
+  ]
+ },
+ {
+  "version": "1.2",
+  "title": "The Modes Update",
+  "notes": [
+   "Game modes: pick one with the new Mode button on the World tab of Create World. Existing worlds stay Outbreak, unchanged.",
+   "New mode, Parasitic Dino: a foggy prehistoric forest with near-black nights, no guns, and dinosaurs taken over by a parasite called the Graft.",
+   "The Gravemaw, an infected Tyrannosaurus, hunts by sound, sight and the smell of blood. It stalks from cover, freezes when you look at it and leaves when it loses you.",
+   "A Ceratosaurus and a Spinosaurus that swims, each one individual in the world. The Graft grows through four stages and changes how each one behaves.",
+   "Abandoned survey sites to search: a dig site, an overrun outpost with a quarantine wing behind a generator, nest grounds, a crashed supply flight and a ranger station.",
+   "Field Bandages stop bleeding; Hand Flares draw dinosaurs away from you.",
+   "Each mode keeps to its own content: no item, recipe, loot or command from one mode turns up in another, and saves drop any that do.",
+   "Leaves are see-through again in Fancy graphics; Fast graphics fills the gaps with a dark leaf colour instead of grey.",
+   "Higher frame rates on fast screens. Landing in shallow water no longer hurts.",
+   "The inventory, chests and chat no longer pause the world. Wearables can be worn.",
+   "Fixed: some chests and recipes named items that do not exist, so those entries never appeared. Rope, bones and leather now turn up where they should, oak leaves drop apples and Hardtack is made from bread."
+  ]
+ },
+ {
+  "version": "1.1",
+  "title": "The Outbreak Update",
+  "notes": [
+   "New worlds have a visible outbreak near spawn: infection spreads in four stages, from spores to a biomass core.",
+   "Every block, item and mob redrawn in one style; parasite hosts are blockier, bloodier and scarier.",
+   "Twelve mob types and a boss, each with its own behaviour; some break blocks to reach you.",
+   "A very rare boss, the Plague Heart, rises at night with a boss bar. It drops the Zombie Heart.",
+   "Brew a Zombie Heart into an Awkward Potion for a Potion of Cleansing: the only way to clean infected blocks. Add gunpowder for a splash version.",
+   "Placing a block above the build limit keeps the block and says \"Height limit for building is 64\".",
+   "Mobs notice you less from far above or below.",
+   "Twenty guns: hold attack to aim, use to fire. Ammo count on the hotbar.",
+   "Recipe book with a Craftable filter that shows what you are missing.",
+   "New menus, one pixel font, sharper HUD at every window size, keyboard focus on every control.",
+   "First-join tutorial hints. Help text follows your key bindings.",
+   "World generation and chunk building moved to background workers: smoother while travelling, faster world open.",
+   "Video settings all do what they say; graphics tier is picked on first launch.",
+   "Saves: block palette stored with each world, automatic backup before any migration.",
+   "Removed: vehicles, NPC missions, the old shooter HUD, stamina, thirst and body temperature.",
+   "Supply drops now arrive every 30 minutes.",
+   "Worlds created from now on grow hanging tendrils from cave ceilings and overhangs in the heart of an outbreak.",
+   "Picking up a new ingredient shows \"New Recipes Unlocked!\".",
+   "Fixed: with Toggle Sneak or Toggle Sprint on, shift-clicking in a chest or crafting table left you crouched and unable to sprint.",
+   "Very quick key taps (like R to reload) are no longer missed.",
+   "New player hurt sound and new zombie groans, hurt and death sounds, all made from scratch for DEADLOCKED.",
+   "New desktop launcher for Windows, macOS and Linux with no frame-rate cap. The website has a new home page; the game is at /play/."
+  ]
+ },
+ {
+  "version": "1.0",
+  "title": "First release",
+  "notes": [
+   "Editable voxel world with caves, ores, biomes, weather, day and night.",
+   "Survival: mining, crafting, smelting, farming, chests, hunger.",
+   "Infected hosts, research labs and guarded structures."
+  ]
+ }
+]

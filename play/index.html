@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLOCKED</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%23141414'/%3E%3Crect x='3' y='2' width='10' height='9' fill='%23c9c3b5'/%3E%3Crect x='4' y='5' width='3' height='3' fill='%23101010'/%3E%3Crect x='9' y='5' width='3' height='3' fill='%23101010'/%3E%3Crect x='3' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='7' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='11' y='11' width='2' height='3' fill='%23c9c3b5'/%3E%3Crect x='6' y='8' width='4' height='2' fill='%238a0f0f'/%3E%3C/svg%3E">
+  <link rel="preload" href="/fonts/DeadlockedPixel.woff" as="font" type="font/woff" crossorigin>
+  <script type="module" crossorigin src="/assets/play-BpEmTuaw.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/journalData-cohubvw1.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-CjQUVuLo.js">
+  <link rel="stylesheet" crossorigin href="/assets/play-B-GC2JGG.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <!-- Fullscreen effect overlays (outside HUD so they cover everything) -->
+    <div id="damage-vignette"></div>
+    <div id="low-health-overlay"></div>
+    <div id="hitmarker"></div>
+    <!-- scope overlay: drawn by CSS (hud.css #scope-overlay), class on = scope, reddot = red-dot sight -->
+    <div id="scope-overlay"></div>
+
+    <div id="underwater-tint"></div>
+    <div id="hud">
+
+      <div id="coords-display" class="hud-element" style="display: none;">
+        <div>X: <span id="coord-x">0.0</span></div>
+        <div>Y: <span id="coord-y">0.0</span></div>
+        <div>Z: <span id="coord-z">0.0</span></div>
+      </div>
+
+      <div id="fps-display" class="hud-element" style="display: none;">
+        FPS: <span id="fps-counter">60</span>
+      </div>
+
+      <div id="crosshair"></div>
+      <div id="item-name-display"></div>
+      <div id="loot-notification"></div>
+
+      <div id="quick-slots"></div>
+
+    </div>
+
+    <!-- Fixed-position HUD overlays (outside #hud to avoid z-index conflicts) -->
+
+    <!-- XP bar (bottom-center) -->
+    <div id="xp-bar-container">
+      <div id="xp-label"></div>
+      <div id="xp-track"><div id="xp-bar"></div></div>
+    </div>
+
+    <div id="inventory-screen">
+      <div id="inv-panel">
+        <div id="inv-header">
+          <span class="inv-title">INVENTORY</span>
+          <span class="inv-hint">Click to use · E to close</span>
+        </div>
+        <div id="inv-body">
+          <div id="inv-equip">
+            <div class="inv-equip-slot" data-equip="head"><span class="equip-label">HEAD</span></div>
+            <div class="inv-equip-slot" data-equip="chest"><span class="equip-label">CHEST</span></div>
+            <div class="inv-equip-slot" data-equip="legs"><span class="equip-label">LEGS</span></div>
+            <div class="inv-equip-slot" data-equip="feet"><span class="equip-label">FEET</span></div>
+            <div class="inv-equip-sep"></div>
+            <div class="inv-equip-slot" data-equip="offhand"><span class="equip-label">HAND</span></div>
+          </div>
+          <div id="inv-grid-area">
+            <div id="inventory-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mc-chat"></div>
+    <div id="command-console" style="display: none;">
+      <input type="text" id="console-input" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div id="death-screen" style="display: none;">
+      <div class="death-container">
+        <h1>You Died!</h1>
+        <p id="death-cause">Player died</p>
+        <p class="death-score">Score: <span id="death-score">0</span></p>
+        <div class="death-buttons">
+          <button id="respawn-btn">Respawn</button>
+          <button id="quit-btn">Title Screen</button>
+        </div>
+        <div class="death-stats">
+          <span>Parasites Purged: <b id="stat-kills">0</b></span>
+          <span>Survived: <b id="stat-time">00:00</b></span>
+          <span>Travelled: <b id="stat-distance">0</b>m</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- title screen: built by src/ui/TitleScreen.js (panorama, logo, splash, buttons) -->
+    <div id="main-menu" class="main-menu mc-title"></div>
+
+    <div id="error-display" class="error-display">
+      <div class="error-content">
+        <h3>Something went wrong</h3>
+        <p id="error-message"></p>
+        <div class="error-row">
+          <button id="error-copy" class="mcp-btn">Copy Report</button>
+          <button id="error-close" class="mcp-btn">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="item-hover-card">
+    <div id="ihc-inner">
+      <div class="wil-icon ihc-icon" id="ihc-icon"></div>
+      <div class="ihc-info">
+        <div class="ihc-name" id="ihc-name">Item Name</div>
+        <div class="ihc-rarity" id="ihc-rarity">COMMON</div>
+        <div class="ihc-hint">Click to pick up</div>
+      </div>
+      <div class="ihc-qty" id="ihc-qty" style="display:none"></div>
+    </div>
+  </div>
+  <!-- Berserker rage indicator -->
+
+  <!-- Readable note / journal popup -->
+  <div id="readable-popup" style="display:none;">
+    <div id="readable-inner">
+      <div id="readable-title"></div>
+      <div id="readable-body"></div>
+      <button id="readable-close">Close [E]</button>
+    </div>
+  </div>
+
+</body>
+</html>
