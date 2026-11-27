@@ -1,0 +1,239 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.wild_robin",
+    "texture_width": 64,
+    "texture_height": 16,
+    "visible_bounds_width": 2,
+    "visible_bounds_height": 2,
+    "visible_bounds_offset": [
+     0,
+     0.25,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "body",
+     "parent": "root",
+     "pivot": [
+      0,
+      4,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -2,
+        2,
+        -3
+       ],
+       "size": [
+        4,
+        4,
+        6
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "head",
+     "parent": "body",
+     "pivot": [
+      0,
+      5,
+      -2
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.5,
+        5,
+        -5
+       ],
+       "size": [
+        3,
+        3,
+        3
+       ],
+       "uv": [
+        48,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -0.5,
+        6,
+        -6
+       ],
+       "size": [
+        1,
+        1,
+        1
+       ],
+       "uv": [
+        20,
+        10
+       ]
+      }
+     ]
+    },
+    {
+     "name": "wing_l",
+     "parent": "body",
+     "pivot": [
+      2,
+      6,
+      -1
+     ],
+     "cubes": [
+      {
+       "origin": [
+        2,
+        2,
+        -2
+       ],
+       "size": [
+        1,
+        4,
+        6
+       ],
+       "uv": [
+        20,
+        0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "wing_r",
+     "parent": "body",
+     "pivot": [
+      -2,
+      6,
+      -1
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -3,
+        2,
+        -2
+       ],
+       "size": [
+        1,
+        4,
+        6
+       ],
+       "uv": [
+        34,
+        0
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_l",
+     "parent": "body",
+     "pivot": [
+      1,
+      2,
+      0.5
+     ],
+     "cubes": [
+      {
+       "origin": [
+        0.5,
+        0,
+        0
+       ],
+       "size": [
+        1,
+        2,
+        1
+       ],
+       "uv": [
+        12,
+        10
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_r",
+     "parent": "body",
+     "pivot": [
+      -1,
+      2,
+      0.5
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.5,
+        0,
+        0
+       ],
+       "size": [
+        1,
+        2,
+        1
+       ],
+       "uv": [
+        16,
+        10
+       ]
+      }
+     ]
+    },
+    {
+     "name": "tail",
+     "parent": "body",
+     "pivot": [
+      0,
+      4.5,
+      3
+     ],
+     "rotation": [
+      8,
+      0,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1,
+        4,
+        3
+       ],
+       "size": [
+        2,
+        1,
+        4
+       ],
+       "uv": [
+        0,
+        10
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
