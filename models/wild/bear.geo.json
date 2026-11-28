@@ -1,0 +1,304 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.wild_bear",
+    "texture_width": 128,
+    "texture_height": 64,
+    "visible_bounds_width": 4,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.72,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "body",
+     "parent": "root",
+     "pivot": [
+      0,
+      14,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7,
+        8,
+        -15
+       ],
+       "size": [
+        14,
+        12,
+        29
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -5,
+        20,
+        -13
+       ],
+       "size": [
+        10,
+        3,
+        9
+       ],
+       "uv": [
+        84,
+        41
+       ]
+      }
+     ]
+    },
+    {
+     "name": "head",
+     "parent": "body",
+     "pivot": [
+      0,
+      16,
+      -15
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5,
+        11,
+        -22
+       ],
+       "size": [
+        10,
+        9,
+        7
+       ],
+       "uv": [
+        86,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -3,
+        11,
+        -26
+       ],
+       "size": [
+        6,
+        5,
+        4
+       ],
+       "uv": [
+        0,
+        55
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ear_l",
+     "parent": "head",
+     "pivot": [
+      3.5,
+      20,
+      -18
+     ],
+     "cubes": [
+      {
+       "origin": [
+        2,
+        20,
+        -19
+       ],
+       "size": [
+        3,
+        3,
+        2
+       ],
+       "uv": [
+        20,
+        55
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ear_r",
+     "parent": "head",
+     "pivot": [
+      -3.5,
+      20,
+      -18
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5,
+        20,
+        -19
+       ],
+       "size": [
+        3,
+        3,
+        2
+       ],
+       "uv": [
+        30,
+        55
+       ]
+      }
+     ]
+    },
+    {
+     "name": "arm_l",
+     "parent": "body",
+     "pivot": [
+      4,
+      8,
+      -9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.5,
+        0,
+        -11.5
+       ],
+       "size": [
+        5,
+        8,
+        5
+       ],
+       "uv": [
+        44,
+        41
+       ]
+      }
+     ]
+    },
+    {
+     "name": "arm_r",
+     "parent": "body",
+     "pivot": [
+      -4,
+      8,
+      -9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6.5,
+        0,
+        -11.5
+       ],
+       "size": [
+        5,
+        8,
+        5
+       ],
+       "uv": [
+        64,
+        41
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_l",
+     "parent": "body",
+     "pivot": [
+      4,
+      8,
+      9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1.5,
+        0,
+        6
+       ],
+       "size": [
+        5,
+        8,
+        6
+       ],
+       "uv": [
+        0,
+        41
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_r",
+     "parent": "body",
+     "pivot": [
+      -4,
+      8,
+      9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6.5,
+        0,
+        6
+       ],
+       "size": [
+        5,
+        8,
+        6
+       ],
+       "uv": [
+        22,
+        41
+       ]
+      }
+     ]
+    },
+    {
+     "name": "tail",
+     "parent": "body",
+     "pivot": [
+      0,
+      18,
+      14
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -1.5,
+        16,
+        14
+       ],
+       "size": [
+        3,
+        3,
+        2
+       ],
+       "uv": [
+        40,
+        55
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

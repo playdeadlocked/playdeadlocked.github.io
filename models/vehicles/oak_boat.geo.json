@@ -1,0 +1,206 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.vehicle_oak_boat",
+    "texture_width": 128,
+    "texture_height": 128,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 2,
+    "visible_bounds_offset": [
+     0,
+     0.5,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "hull",
+     "parent": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -14,
+        0,
+        -8
+       ],
+       "size": [
+        28,
+        3,
+        16
+       ],
+       "uv": [
+        0,
+        24
+       ]
+      },
+      {
+       "origin": [
+        -16,
+        3,
+        -9
+       ],
+       "size": [
+        2,
+        6,
+        18
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      },
+      {
+       "origin": [
+        14,
+        3,
+        -8
+       ],
+       "size": [
+        2,
+        6,
+        16
+       ],
+       "uv": [
+        40,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -14,
+        3,
+        -10
+       ],
+       "size": [
+        28,
+        6,
+        2
+       ],
+       "uv": [
+        64,
+        43
+       ]
+      },
+      {
+       "origin": [
+        -14,
+        3,
+        8
+       ],
+       "size": [
+        28,
+        6,
+        2
+       ],
+       "uv": [
+        0,
+        59
+       ]
+      }
+     ]
+    },
+    {
+     "name": "paddle_l",
+     "parent": "hull",
+     "pivot": [
+      2,
+      8,
+      9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1,
+        7,
+        9
+       ],
+       "size": [
+        2,
+        2,
+        14
+       ],
+       "uv": [
+        88,
+        24
+       ]
+      },
+      {
+       "origin": [
+        1.5,
+        4,
+        17
+       ],
+       "size": [
+        1,
+        6,
+        7
+       ],
+       "uv": [
+        32,
+        43
+       ]
+      }
+     ]
+    },
+    {
+     "name": "paddle_r",
+     "parent": "hull",
+     "pivot": [
+      2,
+      8,
+      -9
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1,
+        7,
+        -23
+       ],
+       "size": [
+        2,
+        2,
+        14
+       ],
+       "uv": [
+        0,
+        43
+       ]
+      },
+      {
+       "origin": [
+        1.5,
+        4,
+        -24
+       ],
+       "size": [
+        1,
+        6,
+        7
+       ],
+       "uv": [
+        48,
+        43
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
