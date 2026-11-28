@@ -1,0 +1,233 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.wild_orca",
+    "texture_width": 128,
+    "texture_height": 128,
+    "visible_bounds_width": 5,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     0.72,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "body",
+     "parent": "root",
+     "pivot": [
+      0,
+      7,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -9,
+        0,
+        -14
+       ],
+       "size": [
+        18,
+        14,
+        26
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -1,
+        14,
+        -6
+       ],
+       "size": [
+        2,
+        9,
+        5
+       ],
+       "uv": [
+        96,
+        40
+       ]
+      }
+     ]
+    },
+    {
+     "name": "head",
+     "parent": "body",
+     "pivot": [
+      0,
+      7,
+      -14
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8,
+        1,
+        -24
+       ],
+       "size": [
+        16,
+        12,
+        10
+       ],
+       "uv": [
+        0,
+        40
+       ]
+      }
+     ]
+    },
+    {
+     "name": "flipper_l",
+     "parent": "body",
+     "pivot": [
+      8,
+      3,
+      -9
+     ],
+     "rotation": [
+      0,
+      0,
+      20
+     ],
+     "cubes": [
+      {
+       "origin": [
+        8,
+        1.5,
+        -11
+       ],
+       "size": [
+        7,
+        2,
+        5
+       ],
+       "uv": [
+        74,
+        62
+       ]
+      }
+     ]
+    },
+    {
+     "name": "flipper_r",
+     "parent": "body",
+     "pivot": [
+      -8,
+      3,
+      -9
+     ],
+     "rotation": [
+      0,
+      0,
+      -20
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -15,
+        1.5,
+        -11
+       ],
+       "size": [
+        7,
+        2,
+        5
+       ],
+       "uv": [
+        98,
+        62
+       ]
+      }
+     ]
+    },
+    {
+     "name": "tail_1",
+     "parent": "body",
+     "pivot": [
+      0,
+      7,
+      12
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6,
+        2,
+        12
+       ],
+       "size": [
+        12,
+        9,
+        10
+       ],
+       "uv": [
+        52,
+        40
+       ]
+      }
+     ]
+    },
+    {
+     "name": "tail_2",
+     "parent": "tail_1",
+     "pivot": [
+      0,
+      7,
+      22
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -3,
+        4,
+        22
+       ],
+       "size": [
+        6,
+        5,
+        5
+       ],
+       "uv": [
+        0,
+        62
+       ]
+      },
+      {
+       "origin": [
+        -10,
+        6,
+        26
+       ],
+       "size": [
+        20,
+        2,
+        6
+       ],
+       "uv": [
+        22,
+        62
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

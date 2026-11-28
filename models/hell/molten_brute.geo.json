@@ -1,0 +1,363 @@
+{
+ "format_version": "1.12.0",
+ "minecraft:geometry": [
+  {
+   "description": {
+    "identifier": "geometry.hell_molten_brute",
+    "texture_width": 128,
+    "texture_height": 128,
+    "visible_bounds_width": 3,
+    "visible_bounds_height": 3,
+    "visible_bounds_offset": [
+     0,
+     1,
+     0
+    ]
+   },
+   "bones": [
+    {
+     "name": "root",
+     "pivot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "body",
+     "parent": "root",
+     "pivot": [
+      0,
+      16,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -8,
+        16,
+        -5
+       ],
+       "size": [
+        16,
+        16,
+        10
+       ],
+       "uv": [
+        52,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -6,
+        14,
+        -5.5
+       ],
+       "size": [
+        12,
+        4,
+        9
+       ],
+       "uv": [
+        58,
+        51
+       ]
+      }
+     ]
+    },
+    {
+     "name": "head",
+     "parent": "body",
+     "pivot": [
+      0,
+      31,
+      -3
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -4,
+        30,
+        -8
+       ],
+       "size": [
+        8,
+        7,
+        7
+       ],
+       "uv": [
+        0,
+        51
+       ]
+      },
+      {
+       "origin": [
+        -4.5,
+        34,
+        -8.6
+       ],
+       "size": [
+        9,
+        2,
+        2
+       ],
+       "uv": [
+        84,
+        65
+       ]
+      }
+     ]
+    },
+    {
+     "name": "arm_l",
+     "parent": "body",
+     "pivot": [
+      10.5,
+      29,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        8,
+        10,
+        -3.5
+       ],
+       "size": [
+        6,
+        21,
+        7
+       ],
+       "uv": [
+        0,
+        0
+       ]
+      },
+      {
+       "origin": [
+        7.5,
+        7,
+        -4
+       ],
+       "size": [
+        7,
+        5,
+        8
+       ],
+       "uv": [
+        0,
+        65
+       ]
+      }
+     ]
+    },
+    {
+     "name": "arm_r",
+     "parent": "body",
+     "pivot": [
+      -10.5,
+      29,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -14,
+        10,
+        -3.5
+       ],
+       "size": [
+        6,
+        21,
+        7
+       ],
+       "uv": [
+        26,
+        0
+       ]
+      },
+      {
+       "origin": [
+        -14.5,
+        7,
+        -4
+       ],
+       "size": [
+        7,
+        5,
+        8
+       ],
+       "uv": [
+        30,
+        65
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_l",
+     "parent": "body",
+     "pivot": [
+      4,
+      16,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        1,
+        0,
+        -3.5
+       ],
+       "size": [
+        6,
+        16,
+        7
+       ],
+       "uv": [
+        0,
+        28
+       ]
+      }
+     ]
+    },
+    {
+     "name": "leg_r",
+     "parent": "body",
+     "pivot": [
+      -4,
+      16,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -7,
+        0,
+        -3.5
+       ],
+       "size": [
+        6,
+        16,
+        7
+       ],
+       "uv": [
+        26,
+        28
+       ]
+      }
+     ]
+    },
+    {
+     "name": "plate_0",
+     "parent": "body",
+     "pivot": [
+      11,
+      32,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        7,
+        31,
+        -5
+       ],
+       "size": [
+        8,
+        4,
+        10
+       ],
+       "uv": [
+        52,
+        28
+       ]
+      }
+     ]
+    },
+    {
+     "name": "plate_1",
+     "parent": "body",
+     "pivot": [
+      -11,
+      32,
+      0
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -15,
+        31,
+        -5
+       ],
+       "size": [
+        8,
+        4,
+        10
+       ],
+       "uv": [
+        88,
+        28
+       ]
+      }
+     ]
+    },
+    {
+     "name": "plate_2",
+     "parent": "body",
+     "pivot": [
+      0,
+      24,
+      -6
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -5,
+        19,
+        -6.5
+       ],
+       "size": [
+        10,
+        9,
+        2
+       ],
+       "uv": [
+        60,
+        65
+       ]
+      }
+     ]
+    },
+    {
+     "name": "plate_3",
+     "parent": "body",
+     "pivot": [
+      0,
+      26,
+      6
+     ],
+     "cubes": [
+      {
+       "origin": [
+        -6,
+        19,
+        5
+       ],
+       "size": [
+        12,
+        12,
+        2
+       ],
+       "uv": [
+        30,
+        51
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
